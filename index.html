@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JARVIS | Padibandla Siva Teja</title>
+<title>JARVIS | PADIBANDLA SIVATEJA</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -19,8 +19,10 @@ font-family:Segoe UI,sans-serif;
 }
 
 body{
-background:#020b12;
-color:white;
+background:
+radial-gradient(circle at top left, rgba(111,183,255,.15), transparent 28%),
+linear-gradient(135deg, #020b12 0%, #07131f 60%, #020914 100%);
+color:#f4f9ff;
 overflow-x:hidden;
 }
 
@@ -29,10 +31,7 @@ content:"";
 position:fixed;
 width:100%;
 height:100%;
-background:
-radial-gradient(circle at center,
-rgba(0,255,255,.15),
-transparent 70%);
+background:linear-gradient(120deg, rgba(111,183,255,.08), transparent 45%, rgba(93,120,255,.10));
 z-index:-2;
 }
 
@@ -41,6 +40,7 @@ position:fixed;
 width:100%;
 height:100%;
 z-index:-1;
+opacity:.75;
 }
 
 header{
@@ -68,10 +68,10 @@ content:"";
 position:absolute;
 width:100%;
 height:100%;
-border:4px solid aqua;
+border:4px solid #76dfff;
 border-radius:50%;
 animation:spin 12s linear infinite;
-box-shadow:0 0 30px aqua;
+box-shadow:0 0 30px rgba(118,223,255,.28);
 }
 
 .ring::after{
@@ -79,7 +79,7 @@ content:"";
 position:absolute;
 width:280px;
 height:280px;
-border:2px dashed rgba(0,255,255,.5);
+border:2px dashed rgba(118,223,255,.35);
 border-radius:50%;
 animation:spin2 20s linear infinite;
 }
@@ -90,6 +90,8 @@ height:210px;
 border-radius:50%;
 overflow:hidden;
 z-index:2;
+border:4px solid rgba(118,223,255,.2);
+box-shadow:0 0 30px rgba(118,223,255,.12);
 }
 
 .profile img{
@@ -113,16 +115,17 @@ transform:rotate(-360deg);
 h1{
 margin-top:40px;
 font-size:3.5rem;
-color:aqua;
-text-shadow:0 0 25px aqua;
+color:#8fe9ff;
+text-shadow:0 0 24px rgba(143,233,255,.22);
 }
 
 .typing{
 overflow:hidden;
 white-space:nowrap;
-border-right:3px solid aqua;
+border-right:3px solid #8fe9ff;
 width:0;
 animation:type 5s steps(50,end) forwards;
+color:#cdefff;
 }
 
 @keyframes type{
@@ -134,16 +137,10 @@ width:100%;
 }
 }
 
-.subtitle{
-margin-top:15px;
-color:#c8ffff;
-font-size:1.2rem;
-}
-
 .live{
 margin-top:20px;
 font-size:1rem;
-color:aqua;
+color:#86dfff;
 }
 
 .socials{
@@ -153,54 +150,56 @@ margin-top:30px;
 }
 
 .socials a{
-color:aqua;
+color:#a8eaff;
 font-size:30px;
 transition:.3s;
 }
 
 .socials a:hover{
-transform:scale(1.2);
-text-shadow:0 0 20px aqua;
+transform:scale(1.12);
+text-shadow:0 0 18px rgba(118,223,255,.28);
 }
 
 .resume{
 margin-top:25px;
 display:inline-block;
 padding:14px 30px;
-background:aqua;
-color:black;
+background:linear-gradient(135deg, #8fe9ff, #6aa9ff);
+color:#03111c;
 font-weight:bold;
 text-decoration:none;
 border-radius:30px;
+box-shadow:0 0 18px rgba(118,223,255,.2);
 }
 
 .resume:hover{
-box-shadow:0 0 30px aqua;
+box-shadow:0 0 28px rgba(118,223,255,.3);
 }
 
 nav{
 position:sticky;
 top:0;
-background:#03141e;
+background:rgba(3,20,30,.72);
+backdrop-filter:blur(12px);
 padding:15px;
 display:flex;
 justify-content:center;
 gap:15px;
 z-index:999;
-border-bottom:1px solid aqua;
+border-bottom:1px solid rgba(118,223,255,.22);
 }
 
 nav a{
-color:aqua;
+color:#bdefff;
 text-decoration:none;
 padding:10px 15px;
-border:1px solid aqua;
+border:1px solid rgba(118,223,255,.25);
 border-radius:20px;
 }
 
 nav a:hover{
-background:aqua;
-color:black;
+background:rgba(118,223,255,.13);
+color:white;
 }
 
 section{
@@ -210,16 +209,17 @@ margin:60px auto;
 }
 
 .card{
-background:#08151e;
+background:rgba(8,21,30,.82);
+backdrop-filter:blur(14px);
 padding:25px;
 border-radius:15px;
-border:1px solid aqua;
-box-shadow:0 0 15px rgba(0,255,255,.2);
+border:1px solid rgba(118,223,255,.18);
+box-shadow:0 14px 40px rgba(0,0,0,.22);
 margin-bottom:30px;
 }
 
 h2{
-color:aqua;
+color:#8fe9ff;
 margin-bottom:20px;
 }
 
@@ -231,19 +231,20 @@ gap:20px;
 
 .skill{
 margin-bottom:15px;
+color:#e7f8ff;
 }
 
 .bar{
 height:10px;
-background:#021018;
+background:#07131d;
 border-radius:20px;
 overflow:hidden;
 }
 
 .fill{
 height:100%;
-background:aqua;
-box-shadow:0 0 15px aqua;
+background:linear-gradient(90deg, #8fe9ff, #5f92ff);
+box-shadow:0 0 12px rgba(118,223,255,.25);
 }
 
 .projects{
@@ -254,14 +255,15 @@ gap:20px;
 
 .project{
 padding:20px;
-border:1px solid aqua;
+border:1px solid rgba(118,223,255,.18);
 border-radius:10px;
 transition:.3s;
+background:rgba(255,255,255,.025);
 }
 
 .project:hover{
 transform:translateY(-8px);
-box-shadow:0 0 25px aqua;
+box-shadow:0 0 24px rgba(118,223,255,.16);
 }
 
 form{
@@ -272,30 +274,30 @@ gap:15px;
 
 input,textarea{
 padding:12px;
-background:#021018;
-color:white;
-border:1px solid aqua;
+background:#08131f;
+color:#f4f9ff;
+border:1px solid rgba(118,223,255,.2);
 border-radius:8px;
 }
 
 button{
 padding:12px;
-background:aqua;
-color:black;
+background:linear-gradient(135deg, #8fe9ff, #6aa9ff);
+color:#03111c;
 border:none;
 font-weight:bold;
 cursor:pointer;
 }
 
 button:hover{
-box-shadow:0 0 20px aqua;
+box-shadow:0 0 18px rgba(118,223,255,.25);
 }
 
 footer{
 padding:30px;
 text-align:center;
-border-top:1px solid aqua;
-color:#c7ffff;
+border-top:1px solid rgba(118,223,255,.18);
+color:#a8bbd4;
 }
 
 .jarvis-core{
@@ -305,19 +307,20 @@ right:20px;
 width:90px;
 height:90px;
 border-radius:50%;
-border:3px solid aqua;
+border:3px solid #8fe9ff;
 display:flex;
 justify-content:center;
 align-items:center;
-color:aqua;
+color:#8fe9ff;
 font-weight:bold;
-box-shadow:0 0 30px aqua;
+box-shadow:0 0 24px rgba(118,223,255,.24);
 animation:pulse 2s infinite;
+background:rgba(8,21,30,.66);
 }
 
 @keyframes pulse{
 50%{
-box-shadow:0 0 50px aqua;
+box-shadow:0 0 40px rgba(118,223,255,.3);
 }
 }
 
@@ -333,14 +336,14 @@ box-shadow:0 0 50px aqua;
 
 <div class="ring">
 <div class="profile">
-<img src="profile.jpeg" alt="Siva Teja">
+<img src="profile.jpeg" alt="PADIBANDLA SIVATEJA">
 </div>
 </div>
 
-<h1>PADIBANDLA SIVA TEJA</h1>
+<h1>PADIBANDLA SIVATEJA</h1>
 
 <p class="typing">
-JARVIS INITIALIZED • SOFTWARE DEVELOPER • AI & DS ENGINEER
+JARVIS INITIALIZED • FULL STACK DEVELOPER • JAVA DEVELOPER • AI ENTHUSIAST
 </p>
 
 <div class="live" id="clock"></div>
@@ -386,7 +389,10 @@ DOWNLOAD RESUME
 <h2>About Me</h2>
 
 <p>
-Hello, I am Padibandla Siva Teja, a passionate B.Tech student in Artificial Intelligence & Data Science from Mother Theresa Institute of Engineering and Technology. I enjoy creating intelligent software systems, web applications, and AI-powered solutions. My mission is to transform ideas into impactful digital experiences.
+I am PADIBANDLA SIVATEJA, a B.Tech student specializing in Artificial Intelligence & Data Science at Mother Theresa Institute of Engineering and Technology. I enjoy building practical software solutions, modern web applications, and AI-driven experiences that turn ideas into real impact.
+</p>
+<p>
+My focus is on full-stack development, Java-based systems, and creating clean digital experiences with strong engineering fundamentals and thoughtful problem solving.
 </p>
 
 </div>
@@ -402,6 +408,7 @@ Hello, I am Padibandla Siva Teja, a passionate B.Tech student in Artificial Inte
 <p><strong>Degree:</strong> B.Tech</p>
 <p><strong>Department:</strong> Artificial Intelligence & Data Science</p>
 <p><strong>College:</strong> Mother Theresa Institute of Engineering and Technology</p>
+<p><strong>Focus:</strong> Software development, Java, web technologies, and AI-driven problem solving</p>
 
 </div>
 
@@ -416,13 +423,18 @@ Hello, I am Padibandla Siva Teja, a passionate B.Tech student in Artificial Inte
 <div class="skills">
 
 <div>
-<div class="skill">HTML</div>
-<div class="bar"><div class="fill" style="width:95%"></div></div>
+<div class="skill">Java</div>
+<div class="bar"><div class="fill" style="width:88%"></div></div>
 </div>
 
 <div>
-<div class="skill">CSS</div>
-<div class="bar"><div class="fill" style="width:90%"></div></div>
+<div class="skill">Python</div>
+<div class="bar"><div class="fill" style="width:86%"></div></div>
+</div>
+
+<div>
+<div class="skill">HTML & CSS</div>
+<div class="bar"><div class="fill" style="width:92%"></div></div>
 </div>
 
 <div>
@@ -431,18 +443,13 @@ Hello, I am Padibandla Siva Teja, a passionate B.Tech student in Artificial Inte
 </div>
 
 <div>
-<div class="skill">Python</div>
-<div class="bar"><div class="fill" style="width:88%"></div></div>
-</div>
-
-<div>
-<div class="skill">Java</div>
+<div class="skill">SQL & MongoDB</div>
 <div class="bar"><div class="fill" style="width:80%"></div></div>
 </div>
 
 <div>
 <div class="skill">AI & ML</div>
-<div class="bar"><div class="fill" style="width:75%"></div></div>
+<div class="bar"><div class="fill" style="width:78%"></div></div>
 </div>
 
 </div>
@@ -461,17 +468,17 @@ Hello, I am Padibandla Siva Teja, a passionate B.Tech student in Artificial Inte
 
 <div class="project">
 <h3>AI Chat Assistant</h3>
-<p>Intelligent chatbot built using modern AI technologies.</p>
+<p>Conversational solution focused on practical AI interaction and user-friendly experience.</p>
 </div>
 
 <div class="project">
 <h3>Portfolio Website</h3>
-<p>Responsive web portfolio with modern UI and animations.</p>
+<p>Responsive personal portfolio designed with clarity, structure, and a polished digital presence.</p>
 </div>
 
 <div class="project">
 <h3>Student Management System</h3>
-<p>Application for managing student records efficiently.</p>
+<p>Application built to organize workflows and manage student-related information efficiently.</p>
 </div>
 
 </div>
@@ -506,7 +513,7 @@ Send Message
 
 <footer>
 
-© 2026 Padibandla Siva Teja | JARVIS Portfolio System
+© 2026 PADIBANDLA SIVATEJA | JARVIS Portfolio System
 
 </footer>
 
